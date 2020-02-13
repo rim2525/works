@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="株式会社Rimuのお問い合わせ">
+<meta name="keywords" content="WEBサイト、WEB制作、コーポレートサイト、採用サイト、メディアサイト、LPキャンペーンサイト">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><title>お問い合わせ::Web制作会社　株式会社Rimu</title>
+<link rel="icon" href="../favicon.ico">
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/base.css" rel="stylesheet" type="text/css">
+<link href="../css/contact.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="contact">
+
+<!--ここからcontent-->
+<div class="content">
+<!--headerここから-->
+
+<header>
+
+  	<h1 class="logo"><a href="../index.html"><img src="../images/logo_2.png" alt="株式会社Rimu"></a></h1>
+
+<nav class="navigation">
+  <ul>
+    <li><a href="../service/index.html">Service</a></li>
+    <li><a href="../works/index.html">Works</a></li>
+    <li><a href="../about/index.html">About</a></li>
+	<li><a href="index.html">contact</a></li>
+	
+	
+  </ul>
+  
+</nav>
+
+
+
+
+
+<!--ここまで -->
+</header>
+
+ 
+
+
+<main>
+
+<div class="works">
+
+	<form action="form.php" method="post">
+	<h2 class="text">お問合せフォーム</h2>
+	
+		
+	<div class="box">
+    
+	<div id="name">
+		<p><label for="name">お名前<strong>※必須</strong></label></p>
+		<p class="alert">お名前を入力してください</p>
+		<input type="text" tabindex="2" class="name" name="name" value="" required>
+	</div>
+	<div id="selectSection"><strong>※必須</strong>
+		<p class="alert">選択してください</p>
+		<select tabindex="1">
+			<option value="none" selected>-お選びください</option>
+			<option value="Select1">-Web制作について</option>
+			<option value="Select2">-マーケティングについて</option>
+			<option value="Select3">-その他</option>
+		</select>
+	</div>
+
+	<div id="companyname">
+		<p><label for="companyname">会社名</label></p>
+		<input type="text" tabindex="3" class="companyname" name="companyname" value="">
+	</div>
+	<div id="email">
+		<p><label for="email">メールアドレス<strong>※必須</strong></label></p>
+		<p class="alert">メールアドレスを入力してください</p>
+		<input type="text" tabindex="4" class="email" name="email" value="" required>
+	</div>
+	<div id="confirm">
+		<p><label for="confirm">メールアドレス(確認用)<strong>※必須</strong></label></p>
+		<p class="alert">アドレスが一致していません</p>
+		<p class="alert2">確認用アドレスを入力してください</p>
+		<input type="text" tabindex="5" class="confirm" name="confirm" value="" required>
+	</div>
+	<div id="tel">
+		<p><label for="tel">電話番号<strong>※必須</strong></label></p>
+		<p class="alert">電話番号を入力してください</p>
+		<input type="tel" tabindex="6" class="tel" name="tel" value="" required>
+	</div>
+	<div id="inquiry">
+		<p>
+			<label for="inquiry">お問い合わせ内容<strong>※必須</strong></label></p>
+		
+		<p><textarea tabindex="7" name="inquiry" rows="5" placeholder="こちらにご記入ください。" required></textarea></p>
+	</div>
+	<div class="fBtn"><input type="submit" value="送信" class="submitBtn"></div>
+	<div class="fBtn"><input type="reset" value="リセット" class="reset"></div>
+</form>
+	
+	</div><!--box -->
+
+
+</div>
+</main>	
+
+<!--footerここから-->
+<footer>
+		<ul>
+			<li class="home"><a href="../index.html">Home</a></li>
+			<li class="nav1"><a href="../service/index.html">Service</a></li>
+			<li class="nav2"><a href="../works/index.html">Works</a></li>
+			<li class="nav3"><a href="../about/index.html">About</a></li>
+			<li class="nav4"><a href="index.html">Contact</a></li>
+			
+		</ul>
+		<p><small>Copyright &copy; 2019 Rimu Inc. All Rights Reserved.</small></p>
+	</footer>
+
+</div><!--content-->
+
+</body>
+</html>
+
+

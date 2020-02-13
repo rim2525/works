@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+form {
+	margin: 0px auto;
+	
+	}
+form h1{
+	text-align: left;
+	font-weight: bold;
+	font-size: 120%;
+	margin-top: 10px;
+	border-bottom: 3px solid #000;
+}
+#selectSection{
+	margin-top: 20px;
+	padding-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+#name,#companyname,#email,#confirm,#tel,#inquiry {
+	margin-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+p label {
+	font-size: 120%;
+
+}
+.name,.companyname,.email,.confirm,.tel {
+	max-width:200px;
+	line-height: 1.5em;
+}
+textarea{
+	text-align: left;
+	margin-bottom: 20px;
+	width: 85%;
+	max-width: 500px;
+}
+.alert,.alert2 {
+	font-size: 80%;
+	color: #F06;
+}
+form strong {
+	color: #F00;
+	font-size: 70%;
+}
+
+.reset{
+	width: 70px;
+	padding: 4px;
+	box-shadow: 2px 2px 2px #ccc;
+	background: #666;
+	border: 1px solid #CC3;
+	color: #FFF;
+}
+.submitBtn {
+	width: 100px;
+	padding: 3px;
+	font-size: 110%;
+	font-weight: bold;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	margin-top: 30px;
+	box-shadow: 2px 2px 2px #ccc;
+	color: #FFF;
+	background: #06F;
+}
+.fBtn {
+	text-align: center;
+	width: 80%;
+	margin: 20px auto;
+
+}
+
+
+.box{
+    width:80%;
+    border: solid 2px #07539f;
+   	margin:0 auto;
+	background:#fff;
+}

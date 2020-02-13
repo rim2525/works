@@ -1,0 +1,59 @@
+@charset "utf-8";
+/*ここから会社概要table*/
+
+
+.kaisha, .kaishadetail{
+	width:80%;
+	margin:0 auto;
+	}
+.kaisha th,
+.kaisha td {
+border: 1px solid #ccc;
+padding: 10px;
+}
+
+.kaisha th {
+	
+	font-weight: bold;
+	background-color: skyblue; 
+}
+
+.kaishagaiyou h1{
+	text-align:left;
+	font-weight: bold;
+	font-size:120%;
+	margin-top:10px;
+}
+
+.kaisha td {
+background:#fff;
+}
+
+
+iframe {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* iPhone 縦 */
+ 
+@media screen and (max-width:768px) { 
+    /*　for iPhone Landscape　(iPhone 横)　*/
+.kaisha,
+.kaisha tr,
+.kaisha td,
+.kaisha th {
+	display:block;}
+.kaisha th {
+	width:auto;}
+	
+.kaisha th,
+.kaisha td {
+border: 1px solid #ccc;
+padding: 5px;
+}
+
+}
+
+
