@@ -1,0 +1,273 @@
+@charset "UTF-8";
+* {
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body {
+font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Osaka, sans-serif;
+color: #333;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    
+  }
+  
+
+img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+
+header{
+    margin: 0 auto;
+    max-width: 710px;
+}
+
+
+
+.contents{
+    width:100%;
+    padding: 16px 10px 32px;
+    max-width:710px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /*これを入れれば伸びるの回避できる初期値は全て伸びるため*/
+    justify-content: space-between;
+    background:#edeae5 ;
+}
+
+
+
+section{
+    background:#fff;
+    width:49%;
+    border: solid 1px #d9d9d9;
+
+}
+
+section:nth-of-type(n+3) {
+    margin: 22px 0 0;
+}
+
+ .title{
+    background-color: #604418;
+    padding: 14px 10px;
+    background-image: url(images/subject02PC_03.jpg);
+    background-position: bottom;/*開始点が下からになる */
+    background-repeat: repeat-x;　 /* 下の横だけ連続して繰り返す。最低background-image: url(images/subject02PC_03.jpg);
+    background-position: bottom;　background-repeat: repeat-x; は必要*/
+    margin-bottom: 10px;
+    width: 338px;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}   
+
+
+
+
+.title a {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.38;
+    color: #fff;
+    text-decoration: none;
+ 
+  }
+
+.title a:hover {
+    text-decoration: underline;
+  }
+  
+
+dl{
+    display: inline;
+    border: 1px solid #f28100;
+    display: flex;
+    font-size: 10px;
+    width: 34%;
+    text-align: center;
+    margin: 5px 0 0 auto;
+}
+
+dt {
+    background: #f28100;
+    color: #fff;
+    width: 52%;
+}
+
+dd{
+    background: #fff;
+    width: 48%;
+}
+
+.inner{
+    padding: 10px 10px 20px 10px;
+    
+}
+
+h2{
+    
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+.sub_visual {
+    padding: 6px;
+    background: url(images/subject02PC_09.gif) ;
+    
+ 
+}
+
+.visual{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.visual p{
+    padding: 6px;
+    background: url(images/subject02PC_09.gif);
+    
+    
+}
+
+
+.visual img{
+   
+    height: auto;
+}
+
+
+
+
+.sub_visual img{
+    border: 1px solid #fff;
+}
+
+h3{
+    text-align: center;
+    position: relative;
+    top:10px;
+    line-height: 1;
+
+
+}
+
+h3 img{
+    width: 48%;
+}
+
+ul{
+    background: #f2eada;
+    padding: 17px 3% 13px;
+    font-size: 16px;
+
+}
+
+ul li{
+    background: url(images/subject02PC_03.gif) no-repeat;
+    background-position: left 3px;
+    padding-left: 20px;
+    color:#333;
+}
+
+
+  .btn {
+    width: 78%;
+    margin: 12px auto 0;
+  }
+  
+  .btn a {
+    background: #f28100;
+    border: double 3px #fff;
+    border-radius: 6px;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    line-height: 2;
+    position: relative;
+    text-align: center;
+    text-indent: -20px;
+  }
+  
+  .btn a:hover {
+    opacity: .7;
+  }
+  
+  .btn a::before, .btn a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: 6px;
+    height: 10px;
+    right: 11%;
+  }
+  
+  .btn a::before {
+    top: 50%;
+    -webkit-transform: skew(-40deg);
+            transform: skew(-40deg);
+  }
+  
+  .btn a::after {
+    top: calc(50% - 10px);
+    -webkit-transform: skew(40deg);
+            transform: skew(40deg);
+  }
+  
+  
+
+ 
+footer {
+        max-width: 710px;
+        margin: 0 auto;
+        text-align: right;
+      }
+      
+
+
+.toTop a {
+        color: #009;
+        font-size: 12px;
+        line-height: 1;
+        position: relative;
+        display: inline-block;
+}
+.toTop a:hover {
+        text-decoration: underline;
+}
+.toTop a::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        border-top: solid 1px #c03;
+        top: 3px;
+        left: -10px;
+}
+.toTop a::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 3px 4px 3px;
+        border-color: transparent transparent #cc0033 transparent;
+}
