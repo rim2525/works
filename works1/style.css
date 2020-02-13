@@ -1,0 +1,539 @@
+
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+        font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Osaka, sans-serif;
+       font-size: 1.4rem;
+        }
+    
+img {
+    vertical-align: bottom;
+}
+
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto ;
+}
+
+/*上に浮き出る動き*/
+
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+/* --------------------------------
+ * へッター
+ * -------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+
+    
+}
+
+ul{
+    display: flex;
+    
+}
+
+.global_navi ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.global_navi ul li a:hover{
+    color: #e6e6e6;
+}
+
+.global_navi ul li {
+    font-size: 21px;
+    text-decoration: none;
+    margin-left: 30px;
+    
+
+}
+
+
+
+/* メインビジュアル */
+.visual{
+    background: url("mainbg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    
+}
+
+.main_visual_title{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.main_visual_subtitle{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-top:20px;
+    
+}
+
+/* About */
+
+.about{
+    text-align: center;
+    margin: 60px 0;
+    
+
+}
+
+.about_title{
+    font-size: 30px;
+    font-weight: bold;
+    color:crimson;
+    margin-bottom: 30px;
+}
+
+.about_subtitle{
+    margin-bottom: 60px;
+    font-size: 16px;
+}
+
+.about_text{
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.about_text_last{
+    line-height: 2;
+}
+
+
+/* 画像４つ*/
+
+
+
+.slide{
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+
+.slide li {
+    width:25%;
+}
+
+.slide li img{
+    width:100%;
+}
+
+
+/* Course */
+.Course{
+    margin:50px 0;
+}
+
+.Course_title{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.Course_text{
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+ .Course_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items:flex-start;*/
+    justify-content: center;
+
+    
+} 
+
+.Course_wrapper.second {
+    flex-direction: row-reverse;
+}
+
+
+.Course_imgBox{
+    width:50%;
+}
+
+.Course_imgBox img{
+    width:100%;
+    height: auto;
+    
+}
+
+.inner{
+    width: 50%;
+    background: #f5f5f5;
+    padding: 10% 5% ;    
+} 
+
+.inner h4{
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    
+}
+
+.inner p{
+    line-height: 1.8;
+    display: inline-block;
+}
+
+
+/* News */
+
+.News{
+    margin: 60px auto;
+}
+
+.News_title{
+    color: yellowgreen;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.8;
+
+}
+
+.News_subtitle{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.News_inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 100px;
+
+}
+
+.News_content{
+    width:30%;
+}
+
+.News_imgBox{
+    padding-bottom: 30px;
+}
+
+.News_imgBox img{
+    width:100%;
+}
+
+.date{
+    padding-bottom: 30px;
+
+}
+
+.News_text{
+    padding-top: 24px;
+    line-height: 1.5;
+}
+
+/* botton */
+.btn{
+    width:300px;
+    height: 60px;
+    margin:0 auto 60px ;
+    
+}
+
+.btn a {
+
+    background:yellowgreen;
+    border-radius: 2px;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    line-height: 3;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* Access */
+
+.Access{
+    margin: 60px 0;
+    background:#e6e6e6;
+}
+
+.Access_title{
+    color:#333;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.8;
+    padding-top: 60px;
+
+}
+
+.Access_subtitle{
+        text-align: center;
+        margin-top: 30px;
+    
+}
+
+ .ggmap {
+        margin: 60px 0;
+        text-align: center;
+        
+
+}
+
+ .ggmap iframe{
+    width: 100%;
+    display: block;
+    
+ }
+
+.access_table {
+    padding: 5% 0;
+}
+
+.access_table table{
+   text-align: center;
+   border-collapse:collapse;
+    width: 100%;
+
+}
+ 
+.access_table　table　tr{
+    display: inline-block;
+    width: 100%;
+}
+
+.access_table th{
+    display: inline-block;
+	width: 20%;
+	padding: 2%;
+	text-align: left;
+	font-weight: normal;
+    vertical-align: middle;
+}
+
+
+
+.access_table td{
+    display: inline-block;
+	width: 30%;
+	padding: 2%;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+
+
+ /* contact */
+ .contact {
+    margin: 60px 0;
+    
+}
+
+.contact_title{
+    color:#333;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.8;
+    padding-top: 60px;
+
+}
+
+.contact_subtitle{
+        text-align: center;
+        margin-top: 30px;
+    
+}
+
+.contact_text{
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 50px 0;
+}
+
+
+
+/* form */
+#form_contents{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.attention{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 86.5%;
+}
+.attention a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.attention a:hover{
+	color: #09F;
+}
+
+.form_table{
+	border-collapse:collapse;
+	width: 100%;
+	margin:5% 0;
+}
+.form_table th{
+	width: 40%;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+	padding: 2%;
+	text-align: left;
+	font-weight: normal;
+    vertical-align: middle;
+}
+.th {
+	text-align: left;
+	float:left;
+	display: block;
+
+}
+.required{
+	text-align: right;
+	display: block;
+}
+
+
+.form_table td{
+	width: 60%;
+	border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+	padding: 2%;
+	clear:both;
+}
+
+
+.inp {
+	width: 98%;
+}
+.alert,
+.alert2{
+	font-size: 86.5%;
+	color: #C00;
+}
+
+#submit_button {
+    
+        width:300px;
+        height: 60px;
+        margin:0 auto 140px;
+        background:yellowgreen;
+        border-radius: 2px;
+        font-size: 18px;
+        color: #fff;
+        line-height: 2;
+        text-align: center;
+        margin-top: 30px;
+}
+
+.submit_button{
+    text-align: center;
+}
+
+#submit_button:hover{
+        opacity: 0.７;
+    }
+    
+
+
+main img{
+    width:100%;
+} 
+
+/* --------------------------------
+ * フッター
+ * -------------------------------- */
+
+footer{
+    background: #e6e6e6;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+/* トップに戻る */
+.pos{
+    position: fixed; 
+    left: 5px;
+    bottom: 5px;
+}
+.back-to-top{
+    position: fixed;
+    right: 1% ;
+    bottom: 0.5%;
+}
+
+
+.pagetop{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
