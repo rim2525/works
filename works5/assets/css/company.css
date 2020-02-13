@@ -1,0 +1,49 @@
+@charset "utf-8";
+.contents{
+	width:80%;
+	margin:0 auto;
+}
+h2{
+	font-size: 120%;
+}
+h2:after {
+	content: "";
+	display: block;
+	height: 3px;
+	background: -webkit-linear-gradient(to right, rgb(74, 104, 146), transparent);
+	background: linear-gradient(to right, rgb(74, 104, 146), transparent);
+}
+table{
+	margin-top: 2%;
+}
+th{
+	width: 20%;
+	font-weight: bold;
+	background-color: #f6f5e3;
+}
+th,td{
+	border: 2px solid #eee8aa;
+	padding: 20px;
+}
+
+/*レスポンシブ設定*/
+@media ( max-width : 480px ){
+	table,tr,th,td{display:block;}
+	.contents{
+		width:100%;
+		margin:0;
+	}
+	th{
+		padding: 5px;
+		width: auto;
+		text-align: center;
+	}
+	td{
+		border-top: none;
+		border-bottom: none;
+		text-align: center;
+	}
+	.last{
+		border-bottom: 2px solid #eee8aa;
+	}
+}

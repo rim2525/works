@@ -1,0 +1,109 @@
+@charset "utf-8";
+html{ overflow-y: scroll;}
+body{ line-height:1.5}
+a {
+	color: #556b2f;
+	text-decoration: none;
+}
+a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+/* トップに戻る */
+.pos{
+	position: fixed; 
+	left: 5px;
+	bottom: 5px;
+}
+.back-to-top{
+	position: fixed;
+	right: 1% ;
+	bottom: 0.5%;
+}
+.wrapper {
+	line-height: 1.5;
+	margin: 0px auto;
+	max-width: 1000px;
+	width: 100%;
+	min-width: 320px;
+}
+
+
+/*メニュー*/
+.btn {
+	background: transparent url(../images/h-btn.png) no-repeat 0 0;
+	display: block;
+	width: 44px;
+	height: 31px;
+	position: fixed;
+	top: 20px;
+	right: 10px;
+	cursor: pointer;
+	z-index: 200;
+	bottom: 20px;
+}
+.close {
+	background-position: 0;
+}
+.drawr {
+	display: none;
+	background-color: rgba(0,0,0,0.6);
+	position: fixed;
+	top: 0px;
+	right: 0;
+	width: 260px;
+	padding: 60px 0px 20px 20px;
+	z-index: 100;
+	transition-timing-function:ease-in-out;
+}
+#menu li {
+	width: 260px;
+	font-size: 140%;
+	font-weight: bold;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#menu li a {
+	color:#fff;
+	display: block;
+	padding: 15px;
+}
+/* フッター */
+footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	text-align: center;
+	min-height: 200px;
+	padding-top: 20px;
+}
+footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	text-align: center;
+	min-height: 200px;
+	padding-top: 20px;
+}
+footer ul {
+	margin-bottom: 5px;
+}
+footer ul li {
+	display: inline;
+}
+.footer li+li::before {
+	content: " | ";
+}
+.copyright small {
+	padding-bottom: 50px;
+}
+#home .wrapper footer .footer .home a,
+#company .wrapper footer .footer .company a,
+#privacypolicy .wrapper footer .footer .privacypolicy a,
+#contact .wrapper footer .footer .contact a 
+{
+	color: #8d535b;
+	text-decoration: underline;
+}

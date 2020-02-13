@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+.contents{
+	width:80%;
+	margin:0 auto;
+}
+h2{
+	font-size: 120%;
+}
+h2:after {
+	content: "";
+	display: block;
+	height: 3px;
+	background: -webkit-linear-gradient(to right, rgb(74, 104, 146), transparent);
+	background: linear-gradient(to right, rgb(74, 104, 146), transparent);
+}
+.caption{
+	margin-top: 2%;
+	font-size: 100%;
+	text-align: right;
+}
+table{
+	width: 100%;
+	padding-bottom: 2px;
+}
+th{
+	width: 30%;
+	font-weight: bold;
+	background-color: #f6f5e3;
+}
+th,td{
+	border: 2px solid #eee8aa;
+	padding: 20px;
+	vertical-align: middle;
+}
+strong{
+	color: #F06;
+	padding-left: 1px;
+}
+.alert,.alert2 {
+	font-size: 80%;
+	color: #F06;
+}
+.tel,.name,.email,.confirm,.companyname,.inquiry,select{
+	border-top: none;
+	border-right: none;
+	width: 80%;
+}
+textarea{
+	margin-bottom: 20px;
+	width: 85%;
+	max-width: 500px;
+	border-top: 2px solid #CCC;
+	border-right: 2px solid #CCC;
+	border-bottom: 2px solid #CCC;
+	border-left: 2px solid #999;
+}
+.fBtn{
+	display: block;
+	text-align: center;
+}
+.submitBtn {
+	width: 25%;
+	padding: 3px;
+	font-size: 110%;
+	margin-top: 30px;
+	box-shadow: 2px 2px 2px #ccc;
+	color: #fff;
+	background:#039;
+	font-style: italic;
+	cursor: pointer;
+}
+.reset{
+	width: 15%;
+	min-width: 5em;
+	margin-right: 2%;
+	padding: 4px;
+	box-shadow: 2px 2px 2px #ccc;
+	background: #666;
+	border: 1px solid #CC3;
+	color: #FFF;
+}
+@media ( max-width : 480px ){
+	table,tbody,tr,th,td{display:block;}
+	.contents{
+		width:100%;
+		margin:0;
+	}
+	th{
+		padding: 5px;
+		width: auto;
+		text-align: center;
+	}
+	td{
+		border-top: none;
+		border-bottom: none;
+		text-align: center;
+	}
+	.last{
+		border-bottom: 2px solid #eee8aa;
+	}
+	textarea{
+		max-width: 420px;
+	}
+}
