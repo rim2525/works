@@ -234,6 +234,12 @@ label {
   visibility: visible;
 }
 
+#modal06:checked ~ .wrapper #modal06Con {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 .modalTtl {
   padding: 2em 0.5em 1.5em;
   font-size: 2em;
