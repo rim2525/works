@@ -44,14 +44,14 @@ body {
 }
 .button {
   display: inline-block;
-  width: 150px;
+  width: 138px;
   padding: 20px;
   border-radius: 4px;
   background-color: #D3D3D3;
   color: #fff;
   text-decoration: none;
   letter-spacing: 1px;
-  font-size: 1.2rem;
+  font-size: 103%;
 }
 .button:hover {
   opacity: 0.9;
@@ -299,7 +299,7 @@ span{
   }
   .site-title {
     margin-top: 35px;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   /* --- about --- */
